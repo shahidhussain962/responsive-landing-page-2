@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box !important;
+    font-family: sans-serif !important;
+}
+header{
+    height: 700px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    background-color:whitesmoke;
+    height: 70px;
+    width: 100%;
+
+}
+.nav{
+    text-align: right;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+.nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 30px;
+    margin-top: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 0.3s ease-in-out;
+}
+.nav a:hover{
+  color: green;
+  text-shadow: 5px 5px 5px;
+  padding-left: 8px;
+
+}
+.co2 p{
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: green;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: rgb(33, 33, 104);
+    text-decoration: none;
+    font-weight: bolder;
+}
+.logo a{
+    font-size: 40px !important;
+    text-transform: capitalize;
+}
+.content{
+    margin-top: 90px;
+    margin-left: 100px;
+    color: black;
+    font-size: 28px;
+}
+.co2{
+    height: 300px;
+    width: 500px;
+    margin-left: 80px;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.line{
+    margin-left: 50px;
+    font-size: 16px;
+    color: green;
+    margin-top: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+.b button{
+    margin-left: 40px !important;
+    color: black;
+    background-color: rgb(86, 253, 86);
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-color: aliceblue;
+    transition: 0.3s ease;
+}
+.b {
+    margin-top: 50px;
+}
+.b button:hover{
+  transform: translateX(10px);
+  background-color: rgb(89, 51, 194);
+  color: white;
+}
+.content{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.5s;
+  
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.co2 {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.line{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.nav{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.5s;
+ 
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.logo{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.5s;
+ 
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.img img{
+    height: 500px;
+    width: 400px;
+    float: right !important;
+    border-radius: 15px;
+    margin-right:100px !important;
+    box-shadow: rgba(10px, 10px, 10px, );
+    transition: 0.3s ease-in;
+ 
+}
+.img img{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 2s forwards;
+    animation-delay: 1.5s;
+  
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.text{
+    margin-top: 100px;
+    margin-left: 400px;
+    
+}
+.text p{
+    color: rgb(52, 179, 52);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-left: 100px;
+}
+.text h1{
+  font-size: 40px;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 700;
+}
+.card{
+    height: 400px;
+    width: 360px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px;
+    overflow: hidden;
+    margin-top: 100px;
+
+}
+.card img{
+    height: 230px;
+    width: 100%;
+    overflow: hidden;
+    border-radius:20px ;
+}
+.con{
+    text-align: center;
+}
+.con h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+.con p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.card p{
+    color: rgb(59, 238, 59);
+    font-weight: 500;
+    font-size: 15px;
+}
+.f2{
+  height: 130vh;
+  width: 100%;  
+}
+.services{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+  overflow: hidden;
+  transition: 0.3s ease-in;
+}
+.card:hover{
+  transform: translateY(-30px);
+}
+.card.c img{
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: none !important;
+}
+.card h2{
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 100px !important;
+  margin-top:20px;
+  text-transform: capitalize !important;
+}
+.card p{
+  text-align: center;
+  font-size: 10px;
+ color: green;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.card button{
+  height: 40px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+ margin-left: 50px;
+  border-color: 2px solid;
+  margin-top: 10px;
+  transition: 0.3s ease-in;
+}
+.card button:hover{
+  background-color: blue;
+  color: white;
+}
+.h{
+  margin-left: 480px;
+  font-size: 30px;
+  color: green;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.q{
+  height: 118vh;
+  width: 100%;
+}
+.about{
+  height: 900px;
+  width: 100%;
+  margin-top: 400px;
+}
+.about img{
+  float: right;
+  margin-right: 150px;
+  margin-top: 50px;
+  height: 300px;
+  width: 300px;
+  transition: 0.3s ease-in;
+}
+.about img:hover{
+  transform: translateY(-30px);
+}
+.about h2{
+  float: left;
+  margin-left: 230px;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 100px;
+  text-transform: capitalize;
+}
+.about p{
+  font-size: 16px;
+  text-align: center;
+  width: 500px;
+  margin-top: 130px;
+  margin-left: 50px;
+}
+.about button{
+ margin-left: 180px !important;
+ margin-top: 50px;
+  height: 40px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+ margin-left: 50px;
+  border-color: 2px solid;
+  transition: 0.3s ease-in;
+}
+.about button:hover{
+  background-color: blue;
+  transform: translateY(-10px);
+}
+.abo{
+  margin-top: 300px;
+  height: 100vh;
+  width: 100%;
+  background: url(images/travel-laptop-0m6r2w9ywrwtb81n.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*Contact us*/
+.contact{
+    margin-top: 100px !important;
+    height: 100vh;
+    width: 100%;
+    border-radius: 15px;
+    border-color: rgba(10, 10, 10, 5px) !important;
+    border: none;
+    background: transparent;
+    margin-left: 20px !important;
+}
+.y{
+    margin-top: 200px !important;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-left: 100px;
+}
+.y h2{
+    margin-top: 50px !important;
+
+}
+.in input{
+    margin-top: 100px;
+    margin-top: 30px !important;
+    color: white;
+    height: 60px;
+    width: 530px;
+    margin-left: 200px !important;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+    backdrop-filter: blur(100px);
+    background: transparent;
+    border: none;
+    border: 2px solid white;
+    font-weight: 700 !important;
+}
+.in button{
+    margin-top: 50px;
+    height: 50px !important;
+    width: 550px;
+    border-radius:20px;
+    margin-left: 200px;
+    border: none;
+    color: white !important;
+    background-color: red;
+    transition: 0.3s ease-in;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.in button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700 !important;
+}
+.in button:hover{
+    background-color: black;
+    color: white;
+    transform: rotateY(-10px);
+}
+.in textarea{
+    border-radius: 20px;
+    color: white;
+    height: 150px;
+    width: 530px !important;
+    margin-top: 30px;
+    margin-left: 200px;
+    text-align: center;
+    font-weight: 700 !important;
+    border: none;
+    backdrop-filter: blur(100px) !important;
+    border-color: aliceblue;
+    box-shadow: 10px, 10px, 10px, 10px  white;
+    width: 450px;
+    border: 2px solid white !important;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.f{
+    height: 116vh;
+    width: 100%;
+    background: url(images/travel-laptop-0m6r2w9ywrwtb81n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+  margin-top: 50%;
+  display: flex;
+  height: 280px;
+  width: 100%;
+  background:url(0e879b97-2b6b-41b7-b9b2-a641c4b5d8e1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.footer a{
+  font-size: 20px;
+  font-weight: 300;
+  color:black;
+  text-decoration: none;
+}
+.footer ul{
+  margin-left: 60px;
+  margin-top: 50px;
+  padding: 20px !important;
+  
+}
+.footer h2{
+  font-size: 70px;
+  font-size: 30px;
+  font-weight: 600;
+  color: green;
+  text-decoration: none;
+}
+.sen ul li{
+  margin-left: 150px !important;
+  padding: 5px;
+}
+
+.lin ul li{
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  float: left;
+  display: inline;
+  margin-left:20px;
+  margin-top: 30px;
+  transition: 0.3s ease-in-out;
+}
+.lin i:hover{
+  transition: 0.3s ease-in;
+}
+
+
+.lin i :hover{
+  color: blue;
+  transform: rotateY('angle');
+}
+.footer a:hover{
+  color: green;
+  text-shadow: 5px 5px 5px;
+  padding-left: 20px;
+}
+.footer a{
+  transition: 0.3s ease-in;
+}
+
+.blogs{
+  display: flex;
+  margin-top: 50px;
+  height: 50vh;
+  width: 1300;
+  justify-content: space-around;
+}
+.h1{
+  height: 200px;
+  width: 400px;
+  font-size: 30px;
+  margin-left: 400px;
+  font-weight: 500;
+  color: green;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.l1{
+  height: 150vh;
+  width: 100%;
+}
+.blogs{
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: 3.5s;
+  
+}
+
+@keyframes fadeUp {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.contact{
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.services{
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.about{
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.lin i{
+  font-size: 20px !important;
+  font-weight: 500;
+  text-decoration: none;
+  color: black !important;
+  transition: 0.3s ease-in;
+}
+.lin i:hover{
+  color: green;
+  text-shadow: 5px,5px,5px;
+}
+.sn ul li{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    float: left;
+    display: inline;
+    margin-left:20px;
+    margin-top: 30px;
+    transition: 0.3s ease-in !important;   
+}
+.sn ul li i:hover{
+    color: blue;
+    margin-bottom: 10px;
+}
+.but button{
+  height: 30px;
+  width: 100px;
+  background-color: blue;
+  color: aliceblue;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  font-weight: 500;
+  transition: 0.3s ease-in;
+}
+.but button:hover{
+  background-color: red;
+  color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.but{
+  margin-top: 20px !important;
+  margin-left: 50px;
+}
+@media(max-width:767px){
+  .footer{
+    width: 100%;
+    margin-bottom:30px;
+    padding: auto;
+    padding-left: 30px;
+  }
+}
+.ser{
+  font-size: 20px !important;
+  color: black;
+  display: flex;
+}
+.ser .card{
+  font-size: 20px !important;
+  color: black !important;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <!--------------navbar----Start----------------------->
+        <div class="navbar">
+            <div class="logo"> Global Travel Tretakker Tours</div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Bilogs</a></li>
+                </ul>
+            </div>
+            <div class="but">
+              <button>Login in</button>
+            </div>
+        </div>
+            
+           <!----------------Navbar end------------------------------------------------->
+
+        <div class="line">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            
+        </div>
+        <!-----------------------Img Start-------------------------------------------------->
+        <div class="img">
+            <img src="0e879b97-2b6b-41b7-b9b2-a641c4b5d8e1.png" alt="">
+        </div>
+        <!------------------img end------------------------------------------------>
+<!-----------------------------CONTENT START---------------------------------------------------------->
+    <div class="content">
+        <h1>it's your world.<br>We'll help you <br>explore it ! </h1>
+      
+    </div>
+    <div class="co2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias odit dignissimos sint ipsum aliquid vero labore magnam! Ducimus,
+           incidunt sed ipsa quibusdam quo officiis iusto numquam veritatis velit reiciendis quia!</p>
+           <div class="b">
+            <button>Explore top Destinations</button>
+         </div>
+        </div>
+        <!----------------Content End--------------------------------------------------->
+        </header>
+        <!-----------------Header End--------------------------------------------------------------->
+<!--------------------------------Service Pakeges---------------------------------------------------------------------->
+<br><br><br>
+<div class="f2">
+  <div class="h">
+    <h2>Service Pakeges</h2>
+  </div>
+  <div class="services" id="g3">
+
+    <div class="card">
+       <div class="c">
+      <img src="images/c58cbdb6-553d-41e8-9bf8-eca7779d3b70.png" alt="">
+    </div>
+      <h2>New Yourk</h2>
+      <p>Ex corrupti nulla in quia atque iusto reiciendis aliquam ullam animi saepe hic vitae quod possimus delectus, maxime eum id exercitationem! A?</p>
+      <button>Visit Now</button>
+    </div>
+    
+    <div class="card">
+      <div class="c">
+     <img src="images/72596d1f-5fad-48e4-83e1-c33450526c00.png" alt="">
+   </div>
+     <h2>Egypt</h2>
+     <p>Ex corrupti nulla in quia atque iusto reiciendis aliquam ullam animi saepe hic vitae quod possimus delectus, maxime eum id exercitationem! A?</p>
+     <button>Visit Now</button>
+   </div>
+
+
+   <div class="card">
+    <div class="c">
+   <img src="images/be4d36ad-4e5a-4879-acdf-9823228c2040.png" alt="">
+ </div>
+   <h2>India</h2>
+   <p>Ex corrupti nulla in quia atque iusto reiciendis aliquam ullam animi saepe hic vitae quod possimus delectus, maxime eum id exercitationem! A?</p>
+   <button>Visit Now</button>
+ </div>
+
+
+ <div class="card">
+  <div class="c">
+ <img src="images/2538fd29-ceb0-469d-aec4-3c568a3b07d1.png" alt="">
+</div>
+ <h2>Turkey</h2>
+ <p>Ex corrupti nulla in quia atque iusto reiciendis aliquam ullam animi saepe hic vitae quod possimus delectus, maxime eum id exercitationem! A?</p>
+ <button>Visit Now</button>
+</div>
+
+<div class="card">
+  <div class="c">
+ <img src="images/60fd1252-9201-4bf8-ad07-2178fccc9fd5.png" alt="">
+</div>
+ <h2>China</h2>
+ <p>Ex corrupti nulla in quia atque iusto reiciendis aliquam ullam animi saepe hic vitae quod possimus delectus, maxime eum id exercitationem! A?</p>
+ <button>Visit Now</button>
+</div>
+
+<div class="card">
+  <div class="c">
+ <img src="images/b91d8d10-08c3-48d4-b84d-f10bb2b3aaa3.png" alt="">
+</div>
+ <h2>Dubai</h2>
+ <p>Ex corrupti nulla in quia atque iusto reiciendis aliquam ullam animi saepe hic vitae quod possimus delectus, maxime eum id exercitationem! A?</p>
+ <button>Visit Now</button>
+</div>
+  </div>
+</div>
+
+<br><br><br><br>
+<!--------------------------About Us------------------------------------------------------------------------->
+<br>
+<div class="about">
+  <img src="images/524cce9d-99a4-4c96-817e-ebcb324ba09b.png" alt="">
+  <br>
+  <h2>About Us</h2>
+  <br>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam vero tenetur saepe esse, sed maxime ad repellat voluptatum distinctio voluptate labore porro accusantium, at, error in doloribus voluptates doloremque alias?</p>
+   <button>Readmore</button>
+</div>
+<!------------------------------------------Pacakages---------------------------------------------------------------------->
+<div class="l1">
+  <h2 style="font-size: 30px; color: green;margin-left: 460px;text-transform: capitalize;font-weight: 500;">Amazing Pakages</h2>
+  <div class="blogs">
+  
+    <div class="card">
+    <div class="c">
+   <img src="images/72596d1f-5fad-48e4-83e1-c33450526c00.png" alt="">
+ </div>
+   <p style="color: black; font-size: 20px;"><i class="fa-solid fa-location-dot"></i>Egypt Mysterious Pyraminds</p>
+   <h2 style="color: green; font-size: 20px;">Price : 12000$</h2>
+   <button>Buy Now</button>
+ </div>
+ <div class="card">
+  <div class="c">
+ <img src="images/Japan-Matsuri.jpg" alt="">
+</div>
+ <p style="color: black; font-size: 20px;"><i class="fa-solid fa-location-dot"></i>Tokyo Cultured people experinced</p>
+ <h2 style="color: green; font-size: 20px;">Price : 72000$</h2>
+ <button>Buy Now</button>
+</div>
+<div class="card">
+  <div class="c">
+ <img src="images/60fd1252-9201-4bf8-ad07-2178fccc9fd5.png" alt="">
+</div>
+ <p style="color: black; font-size: 20px;"><i class="fa-solid fa-location-dot"></i>the greet wall of chins</p>
+ <h2 style="color: green; font-size: 20px;">Price : 92000$</h2>
+ <button>Buy Now</button>
+</div>
+</div>
+</div>
+<!----------------------------------------Contact us--------------------------------------------------------->
+<div class="y" style="margin-top: 50px;">
+  <h2 style="margin-top: 100px; color: green; margin-left: 380px;">Contact Us</h2>  
+</div>
+<div class="f">
+  <div class="y" style="margin-top: 50px;margin-left: 400px;margin-top: 100px;">
+    <h2 style="margin-top: 100px;">Contact Us</h2>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="contact">
+        
+    <div class="in">
+     
+  <br>  
+      <input type="text" placeholder="Enter Your Name">
+      <br>
+      <input type="text" placeholder="Enter Your Email">
+     <br>
+      <textarea  placeholder="Enter Your Message"></textarea>
+      <br>
+      <button><a href="#">Send Message</a></button>
+  </form>    
+</div>
+</div>
+</div>
+<!-------------------------------Footer------------------------------------------------------------------------->
+<div class="footer">
+  <ul>
+    <li><h2>Global Tretaker</h2></li>
+    <li><h2>Travel Agency</h2></li>
+  </ul>
+  <div class="sen">
+  <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Service Pakages</a></li>
+    <li><a href="">Contact Us</a></li>
+    <li><a href="">Blogs</a></li>
+  </ul>
+</div>
+<div class="sn">
+  <ul>
+    <li> <a href="https://www.facebook.com/share/1B7L4Nyq5X/"><i class="fa-brands fa-facebook"></i></a>            </i></li>
+    <li><a href="https://www.linkedin.com/in/shahid-gaho-a47976348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>             </i></li> 
+    <li><a href="https://www.youtube.com/@ShahidFf-wf5fd"><i class="fa-brands fa-youtube"></i></a></li>
+    <li><a href="https://www.instagram.com/shahid_hussain_v9?utm_source=qr&igsh=MTMzeDQ4YXZnZzN2Yw=="><i class="fa-brands fa-square-instagram">     </i></a></li>
+    <li><i class="fa-brands fa-github">               <a href=""></a></i></li>
+
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
